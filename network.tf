@@ -30,3 +30,13 @@ resource "azurerm_subnet" "subnetapp" {
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes = ["10.0.2.0/24"]
 }
+
+resource "azurerm_subnet_network_security_group_association" "subnetdb_association" {
+  network_security_group_id = azurerm_network_security_group.netsecgroup.id
+  subnet_id = azurerm_subnet.subnetdb.id
+}
+
+resource "azurerm_subnet_network_security_group_association" "subnetapp_association" {
+  network_security_group_id = azurerm_network_security_group.netsecgroup.id
+  subnet_id = azurerm_subnet.subnetapp.id
+}
