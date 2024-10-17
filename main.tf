@@ -13,11 +13,11 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name = "rg-accounting_system-dev"
-  location = "East US 2"
+  name = "rg-${var.project}-${var.environment}"
+  location = var.location
   tags = {
-    "environment" = "dev"
-    "project" = "accounting_system"
+    "environment" = var.environment
+    "project" = var.project
     "created_by" = "terraform"
   }
 }
