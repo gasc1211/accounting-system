@@ -1,6 +1,6 @@
 # Accounting System IaC
 
-[Portfolio Entry]("") | [Video]("")
+[Portfolio Entry](https://gabriel-suazo.vercel.app/projects/accounting-system-terraform) | [Video](https://drive.google.com/file/d/11hv-W_24of1q_29PG-zWvQSLu8gLKMhT/view?usp=sharing)
 
 Terraform Infrastructure as Code cloud architecture for a small ficticious accounting system.
 
