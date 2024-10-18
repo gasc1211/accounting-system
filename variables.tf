@@ -3,6 +3,11 @@ variable "project" {
   default     = "accounting_system"
 }
 
+variable "projectdashless" {
+  description = "Project name without dashes"
+  default     = "accountingsystem"
+}
+
 variable "environment" {
   description = "Environment to release"
   default     = "dev"
