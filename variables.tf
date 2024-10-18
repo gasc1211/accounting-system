@@ -12,3 +12,17 @@ variable "location" {
   description = "Resource cloud location"
   default = "East US 2"
 }
+
+variable "sql_server_password" {
+  description = "MSSQL Server admin password"
+  default = "sqlserver password"
+}
+
+variable "tags" {
+  description = "Tags assigned to project resources"
+  default = {
+    "environment" = "dev"
+    "project" = "accounting_system"
+    "created_by" = "terraform"
+  }
+}
