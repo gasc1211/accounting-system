@@ -15,7 +15,8 @@ variable "location" {
 
 variable "sql_server_password" {
   description = "MSSQL Server admin password"
-  default = "sqlserver password"
+  type = string
+  sensitive = true
 }
 
 variable "tags" {
